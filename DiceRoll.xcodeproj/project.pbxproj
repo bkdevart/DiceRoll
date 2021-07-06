@@ -14,6 +14,7 @@
 		CADDF30826936D380023C1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADDF30726936D380023C1FB /* Assets.xcassets */; };
 		CADDF30B26936D380023C1FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADDF30A26936D380023C1FB /* Preview Assets.xcassets */; };
 		CADDF30E26936D380023C1FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADDF30C26936D380023C1FB /* LaunchScreen.storyboard */; };
+		CADDF316269484880023C1FB /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDF315269484880023C1FB /* DiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CADDF30A26936D380023C1FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CADDF30D26936D380023C1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CADDF30F26936D380023C1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADDF315269484880023C1FB /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				CADDF2FE26936D370023C1FB /* AppDelegate.swift */,
 				CADDF30026936D370023C1FB /* SceneDelegate.swift */,
 				CADDF30226936D370023C1FB /* ContentView.swift */,
+				CADDF315269484880023C1FB /* DiceView.swift */,
 				CADDF30726936D380023C1FB /* Assets.xcassets */,
 				CADDF30C26936D380023C1FB /* LaunchScreen.storyboard */,
 				CADDF30F26936D380023C1FB /* Info.plist */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CADDF2FF26936D370023C1FB /* AppDelegate.swift in Sources */,
+				CADDF316269484880023C1FB /* DiceView.swift in Sources */,
 				CADDF30126936D370023C1FB /* SceneDelegate.swift in Sources */,
 				CADDF30326936D370023C1FB /* ContentView.swift in Sources */,
 				CADDF30626936D370023C1FB /* DiceRoll.xcdatamodeld in Sources */,
