@@ -12,14 +12,14 @@ struct ContentView: View {
         TabView {
             DiceView()
                 .tabItem {
-                    Image(systemName: "star")
-                    Text("One")
+                    Image(systemName: "die.face.5")
+                    Text("Roll")
                 }
 
             Text("Results")
                 .tabItem {
-                    Image(systemName: "star.fill")
-                    Text("Two")
+                    Image(systemName: "list.number")
+                    Text("Results")
                 }
         }
     }
