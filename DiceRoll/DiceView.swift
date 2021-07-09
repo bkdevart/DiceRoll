@@ -11,9 +11,16 @@ struct DiceView: View {
     @State private var diceSelect = 1
     @State private var numberOfDice = 0
     @State private var diceRollValue = 4
-//    @State private var diceRollValue = [4]
+    @State private var allDiceRolled = [4]
     // use coredata to hold results and pass between views
-    
+//    struct MyType: Identifiable {
+//        let id = UUID()
+//    }
+//    struct Container: Identifiable {
+//        let id = UUID()
+//        var myTypes = [MyType]()
+//    }
+//
     var diceNumbers = [0: "1",
                        1: "2",
                        2: "3",
@@ -62,10 +69,14 @@ struct DiceView: View {
     }
     
     func diceRoll() {
-        // pick random number between 1 and diceSizes[diceSelect]!
-        let diceMax = Int(diceSizes[diceSelect]!)! + 1
-        diceRollValue = Int.random(in: 1..<diceMax)
-        // update diceRollValue state var and display
+        let rolls = Int(diceNumbers[numberOfDice]!)
+        allDiceRolled.removeAll()
+        for _ in 1...rolls! {
+            let diceMax = Int(diceSizes[diceSelect]!)! + 1
+            diceRollValue = Int.random(in: 1..<diceMax)
+            allDiceRolled.append(diceRollValue)
+        }
+        diceRollValue = allDiceRolled.reduce(0, +)
         print("Dice rolled!")
     }
 }
