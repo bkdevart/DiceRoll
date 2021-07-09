@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    var allDiceRolled = DiceRolls()
+    
     var body: some View {
         TabView {
             DiceView()
@@ -16,12 +18,13 @@ struct ContentView: View {
                     Text("Roll")
                 }
 
-            Text("Results")
+            ResultsView()
                 .tabItem {
                     Image(systemName: "list.number")
                     Text("Results")
                 }
         }
+        .environmentObject(allDiceRolled)
     }
 }
 

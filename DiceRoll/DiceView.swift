@@ -11,16 +11,10 @@ struct DiceView: View {
     @State private var diceSelect = 1
     @State private var numberOfDice = 0
     @State private var diceRollValue = 4
-    @State private var allDiceRolled = [4]
+    
+    @EnvironmentObject var allDiceRolled: DiceRolls
     // use coredata to hold results and pass between views
-//    struct MyType: Identifiable {
-//        let id = UUID()
-//    }
-//    struct Container: Identifiable {
-//        let id = UUID()
-//        var myTypes = [MyType]()
-//    }
-//
+
     var diceNumbers = [0: "1",
                        1: "2",
                        2: "3",
@@ -38,12 +32,6 @@ struct DiceView: View {
     
     var body: some View {
         VStack {
-//            List (diceRollValue) {
-//                Text($0)
-//            }
-//            for face in diceRollValue {
-//
-//            }
             Text(String(diceRollValue))
                 .font(.largeTitle)
                 .frame(width: 300, height: 300, alignment: .center)
@@ -70,13 +58,18 @@ struct DiceView: View {
     
     func diceRoll() {
         let rolls = Int(diceNumbers[numberOfDice]!)
-        allDiceRolled.removeAll()
+        var diceRolled = [Int]()
         for _ in 1...rolls! {
             let diceMax = Int(diceSizes[diceSelect]!)! + 1
             diceRollValue = Int.random(in: 1..<diceMax)
-            allDiceRolled.append(diceRollValue)
+            diceRolled.append(diceRollValue)
         }
-        diceRollValue = allDiceRolled.reduce(0, +)
+        
+        // write to results data
+        diceRollValue = diceRolled.reduce(0, +)
+        let diceRoll = DiceRoll()
+        diceRoll.rollValue = diceRollValue
+        allDiceRolled.diceRolls.append(diceRoll)
         print("Dice rolled!")
     }
 }
