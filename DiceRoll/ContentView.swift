@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var allDiceRolled = DiceRolls()
+    var allDiceRolled = [DiceRoll]()
     
     var body: some View {
         TabView {

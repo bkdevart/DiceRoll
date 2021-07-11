@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ResultsView: View {
-    @EnvironmentObject var allDiceRolled: DiceRolls
+    @EnvironmentObject var allDiceRolled: [DiceRoll]
     
     var body: some View {
         VStack {
             Text("Results")
 //            List {
 //                ForEach(allDiceRolled, id: \.self) { roll in
-//                    
+//
 //                }
 //            }
         }
