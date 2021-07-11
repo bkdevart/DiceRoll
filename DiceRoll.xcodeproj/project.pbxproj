@@ -15,7 +15,7 @@
 		CADDF30B26936D380023C1FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADDF30A26936D380023C1FB /* Preview Assets.xcassets */; };
 		CADDF30E26936D380023C1FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADDF30C26936D380023C1FB /* LaunchScreen.storyboard */; };
 		CADDF316269484880023C1FB /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDF315269484880023C1FB /* DiceView.swift */; };
-		CADDF3182697E8410023C1FB /* DiceRolls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDF3172697E8410023C1FB /* DiceRolls.swift */; };
+		CADDF3182697E8410023C1FB /* DiceRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDF3172697E8410023C1FB /* DiceRoll.swift */; };
 		CADDF31C2697EF950023C1FB /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDF31B2697EF950023C1FB /* ResultsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		CADDF30D26936D380023C1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CADDF30F26936D380023C1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CADDF315269484880023C1FB /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
-		CADDF3172697E8410023C1FB /* DiceRolls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRolls.swift; sourceTree = "<group>"; };
+		CADDF3172697E8410023C1FB /* DiceRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRoll.swift; sourceTree = "<group>"; };
 		CADDF31B2697EF950023C1FB /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +68,7 @@
 				CADDF30026936D370023C1FB /* SceneDelegate.swift */,
 				CADDF30226936D370023C1FB /* ContentView.swift */,
 				CADDF31B2697EF950023C1FB /* ResultsView.swift */,
-				CADDF3172697E8410023C1FB /* DiceRolls.swift */,
+				CADDF3172697E8410023C1FB /* DiceRoll.swift */,
 				CADDF315269484880023C1FB /* DiceView.swift */,
 				CADDF30726936D380023C1FB /* Assets.xcassets */,
 				CADDF30C26936D380023C1FB /* LaunchScreen.storyboard */,
@@ -158,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CADDF2FF26936D370023C1FB /* AppDelegate.swift in Sources */,
-				CADDF3182697E8410023C1FB /* DiceRolls.swift in Sources */,
+				CADDF3182697E8410023C1FB /* DiceRoll.swift in Sources */,
 				CADDF316269484880023C1FB /* DiceView.swift in Sources */,
 				CADDF30126936D370023C1FB /* SceneDelegate.swift in Sources */,
 				CADDF31C2697EF950023C1FB /* ResultsView.swift in Sources */,

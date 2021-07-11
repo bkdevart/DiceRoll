@@ -10,14 +10,26 @@ import SwiftUI
 struct ResultsView: View {
     @EnvironmentObject var allDiceRolled: DiceRolls
     
+    var diceValues: [DiceRoll] {
+        return allDiceRolled.diceRolls
+//        switch filter {
+//        case .none:
+//            return prospects.people
+//        case .contacted:
+//            return prospects.people.filter { $0.isContacted }
+//        case .uncontacted:
+//            return prospects.people.filter { !$0.isContacted }
+//        }
+    }
+    
     var body: some View {
         VStack {
             Text("Results")
-//            List {
-//                ForEach(allDiceRolled, id: \.self) { roll in
-//                    
-//                }
-//            }
+            List {
+                ForEach(diceValues) { roll in
+                    Text(String(roll.rollValue))
+                }
+            }
         }
     }
 }

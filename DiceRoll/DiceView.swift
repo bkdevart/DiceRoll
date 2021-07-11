@@ -11,7 +11,7 @@ struct DiceView: View {
     @State private var diceSelect = 1
     @State private var numberOfDice = 0
     @State private var diceRollValue = 4
-    
+//    @EnvironmentObject var allDiceRolledArray: [Int]()
     @EnvironmentObject var allDiceRolled: DiceRolls
     // use coredata to hold results and pass between views
 
